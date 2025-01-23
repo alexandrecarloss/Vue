@@ -1,14 +1,20 @@
 <!-- Script -->
 <script setup>
-  //Variáeis
-  let nome = 'Kesia';
-  let idade = 23;
-  let numero1 = 10;
-  let numero2 = 5;
+  // Importação dos componentes
+  // import Exemplo01 from './componentes/Exemplo01Interpolacao.vue'
+  // import Exemplo02 from './componentes/Exemplo02Condicional.vue'
+  // import Exemplo03 from './componentes/Exemplo03Laco.vue'
+  // import Exemplo04 from './componentes/Exemplo04HTML.vue'
+  // import Exemplo05 from './componentes/Exemplo05Model.vue'
+  // import Exemplo06 from './componentes/Exemplo06Classe.vue'
+  // import Exemplo07 from './componentes/Exemplo07Clique.vue'
+  // import Exemplo08 from './componentes/Exemplo08Teclado.vue'
+  // import Exemplo09 from './componentes/Exemplo09Enviar.vue'
+  // import Exemplo10 from './componentes/Exemplo10Lifecycle.vue'
+  // import Exemplo11 from './componentes/Exemplo11Props1.vue'
+  import Exemplo12 from './componentes/Exemplo12Rotas.vue'
 </script>
-
 <!-- HTML -->
-<template>
-  <p>{{ 'Olá ' + nome }} você tem {{ idade }} anos.</p>
-  <p>{{ numero1 + numero2 }}</p>
-</template>
+ <template>
+  <Exemplo12></Exemplo12>
+ </template>
