@@ -13,7 +13,8 @@
 
   <!-- <ExemploDataBinding/> -->
 
-  <ExemploClassStyleDinamico/>
+  <!-- <ExemploClassStyleDinamico/> -->
+  <aula_8TwoWayDataBinding/>
 </template>
 
 <script>
@@ -22,7 +23,8 @@
 // import ExemploCondicionais from './components/ExemploCondicionais.vue'
 // import ExemploRepeticao from './components/ExemploRepeticao.vue'
 // import ExemploDataBinding from './components/ExemploDataBinding.vue'
-import ExemploClassStyleDinamico from './components/ExemploClassStyleDinamico.vue'
+// import ExemploClassStyleDinamico from './components/ExemploClassStyleDinamico.vue'
+import aula_8TwoWayDataBinding from './components/aula_8TwoWayDataBinding.vue'
 
 export default {
   name: 'App',
@@ -32,7 +34,7 @@ export default {
     // ExemploCondicionais,
     // ExemploRepeticao,
     // ExemploDataBinding,
-    ExemploClassStyleDinamico
+    aula_8TwoWayDataBinding
   },
   data() {
     return {
