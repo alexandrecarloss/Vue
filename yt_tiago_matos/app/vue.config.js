@@ -1,4 +1,15 @@
-const { defineConfig } = require('@vue/cli-service')
+const { defineConfig } = require('@vue/cli-service');
+
 module.exports = defineConfig({
-  transpileDependencies: true
-})
+  transpileDependencies: true,
+  devServer: {
+    host: '192.168.0.16',
+    port: 8080,
+    hot: true,
+    liveReload: true,
+    allowedHosts: 'all', // Permite conexões externas
+    client: {
+      webSocketURL: 'ws://192.168.0.16:8080/ws', // URL correta do WebSocket
+    },
+  },
+});
