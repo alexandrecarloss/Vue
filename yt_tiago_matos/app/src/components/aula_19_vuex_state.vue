@@ -41,7 +41,10 @@
                 email: 'carlos.souza@gmail.com'
             }
             
-            this.$store.commit('storeUser', newUser);
+            // this.$store.commit('storeUser', newUser);
+            this.$store.dispatch('storeUser', newUser).then(() => {
+                console.log('terminou com sucesso')
+            });
             }
         }
     }

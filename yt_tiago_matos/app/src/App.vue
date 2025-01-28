@@ -40,10 +40,17 @@
       {{  text }}
     </aula_16_emit>
   </div> -->
-  <!-- <aula_19_vuex_state/> -->
+  <!-- <aula_19_vuex_state/>
   <AppProducts/>
 
-  {{  $store.state.cart.length }}
+  <div>
+    {{  $store.state.cart }}
+  </div>
+
+  {{ $store.getters.total }} -->
+
+  <aula_24_composition_api/>
+   <AppProduct_24/>
 </template>
 
 <script>
@@ -63,7 +70,9 @@
 // import aula_15_props from '@/components/aula_15_props.vue'
 // import aula_16_emit from '@/components/aula_16_emit.vue'
 // import aula_19_vuex_state from '@/components/aula_19_vuex_state.vue'
-import AppProducts from '@/components/aula_20_products/AppProducts.vue'
+// import AppProducts from '@/components/aula_20_products/AppProducts.vue'
+import AppProduct_24 from '@/components/aula_24_products/AppProduct_24.vue'
+import aula_24_composition_api from '@/components/aula_24_composition_api.vue'
 
 export default {
   name: 'App',
@@ -83,8 +92,10 @@ export default {
     // aula_14_base_card,
     // aula_15_props,
     // aula_16_emit,
-    // aula_19_vuex_state
-    AppProducts
+    // aula_19_vuex_state,
+    // AppProducts,
+    aula_24_composition_api,
+    AppProduct_24,
   },
   data() {
     return {

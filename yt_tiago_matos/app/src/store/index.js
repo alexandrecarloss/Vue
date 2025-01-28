@@ -30,6 +30,9 @@ export default createStore({
     cart: [],
   },
   getters: {
+    total(state) {
+      return state.cart.reduce((total, item) => total += item.price, 0);
+    }
   },
   mutations: {
     storeUser(state, data) {
@@ -46,7 +49,30 @@ export default createStore({
       }
     }
   },
+  // actions: {
+  //   storeUser() {
+  //     // Rotina cabulosa
+  //     // ajax
+  //     return new Promise((resolve) => {
+  //       setTimeout(() => {
+  //         resolve();
+  //         console.log('here')
+  //       }, 2000)
+  //     })
+  //     // commit('storeUser', data);
+  //   }
+  // },
   actions: {
+    storeUser({ commit }, data) {
+      // Rotina cabulosa
+      // ajax
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          commit('storeUser', data);
+          resolve();
+        }, 2000)
+      })
+    }
   },
   modules: {
   }
