@@ -49,8 +49,9 @@
 
   {{ $store.getters.total }} -->
 
-  <aula_24_composition_api/>
-   <AppProduct_24/>
+  <!-- <aula_24_composition_api/> -->
+  <AppProduct_24/>
+  <aula_25_composition_ref/>
 </template>
 
 <script>
@@ -72,7 +73,8 @@
 // import aula_19_vuex_state from '@/components/aula_19_vuex_state.vue'
 // import AppProducts from '@/components/aula_20_products/AppProducts.vue'
 import AppProduct_24 from '@/components/aula_24_products/AppProduct_24.vue'
-import aula_24_composition_api from '@/components/aula_24_composition_api.vue'
+// import aula_24_composition_api from '@/components/aula_24_composition_api.vue'
+import aula_25_composition_ref from '@/components/aula_25_composition_ref.vue'
 
 export default {
   name: 'App',
@@ -94,8 +96,9 @@ export default {
     // aula_16_emit,
     // aula_19_vuex_state,
     // AppProducts,
-    aula_24_composition_api,
+    // aula_24_composition_api,
     AppProduct_24,
+    aula_25_composition_ref,
   },
   data() {
     return {
