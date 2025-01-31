@@ -52,7 +52,23 @@
   <!-- <aula_24_composition_api/> -->
   <!-- <AppProduct_24/> -->
   <!-- <aula_25_composition_ref/> -->
-   <aula_26_computed_e_ref/>
+   <!-- <aula_26_computed_e_ref/> -->
+    <!-- <div>
+      <aula_27_composition_ciclo_de_vida v-if="showAppHook"/>
+    <button @click="showAppHook = !showAppHook">
+      Mostrar App Hook
+    </button>
+    </div> -->
+    <div>
+      <aula_28_composition_props_emit 
+      data-vue="Jon"
+      @update="getUpdate"
+      variant="danger">
+        Save
+        <template #icon>Icon</template>
+      </aula_28_composition_props_emit>
+    </div>
+    
 </template>
 
 <script>
@@ -76,8 +92,12 @@
 // import AppProduct_24 from '@/components/aula_24_products/AppProduct_24.vue'
 // import aula_24_composition_api from '@/components/aula_24_composition_api.vue'
 // import aula_25_composition_ref from '@/components/aula_25_composition_ref.vue'
-import aula_26_computed_e_ref from '@/components/aula_26_computed_e_ref.vue'
+// import aula_26_computed_e_ref from '@/components/aula_26_computed_e_ref.vue'
+// import aula_27_composition_ciclo_de_vida from '@/components/aula_27_composition_ciclo_de_vida.vue'
+import aula_28_composition_props_emit from '@/components/aula_28_composition_props_emit.vue'
 
+
+import { ref } from 'vue';
 
 export default {
   name: 'App',
@@ -102,7 +122,19 @@ export default {
     // aula_24_composition_api,
     // AppProduct_24,
     // aula_25_composition_ref,
-    aula_26_computed_e_ref,
+    // aula_26_computed_e_ref,
+    // aula_27_composition_ciclo_de_vida,
+    aula_28_composition_props_emit,
+  },
+  setup() {
+    const showAppHook = ref(true)  
+    const getUpdate = (data) => {
+      console.log('getUpdate', data);
+    }
+    return {
+      showAppHook,
+      getUpdate
+    }
   },
   data() {
     return {
