@@ -7,9 +7,9 @@ module.exports = defineConfig({
     port: 8080,
     hot: true,
     liveReload: true,
-    allowedHosts: 'all', // Permite conexões externas
+    allowedHosts: 'all', 
     client: {
-      webSocketURL: 'ws://192.168.0.16:8080/ws', // URL correta do WebSocket
+      webSocketURL: 'ws://192.168.0.16:8080/ws',
     },
   },
 });
